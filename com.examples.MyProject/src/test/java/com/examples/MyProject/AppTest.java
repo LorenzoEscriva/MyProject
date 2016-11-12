@@ -4,9 +4,6 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest {
 	private App app;
 
@@ -18,5 +15,10 @@ public class AppTest {
 	@Test
 	public void testSayHello() {
 		assertEquals("Hello", app.sayHello());
+	}
+
+	@Test
+	public void testSayHelloWithName() {
+		assertEquals("Hello World", app.sayHello("World"));
 	}
 }
